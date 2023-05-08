@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.login_box {
+.signin-box {
   display: flex;
   min-width: 100vh;
   max-height: 90vh;
@@ -37,13 +37,4 @@
     display: flex;
     flex-direction: column;
   }
-}
-
-.google {
-  @extend %button-temp;
-  margin-top: 0;
-}
-
-h5{
-  color: #9e9e9e;
 }

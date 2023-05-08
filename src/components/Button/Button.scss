@@ -1,20 +1,20 @@
-$color_1: #f0eccf;
+$text-color: #f0eccf;
 $background-color_1: #9c88ff;
 $background-color_2: #8d76ff;
 
-.buttonOne {
-  margin: 20px;
+%button-temp {
+  // margin: 20px;
   cursor: pointer;
   background-color: $background-color_1;
   box-shadow: var(--box-shadow);
-  color: $color_1;
+  color: $text-color;
   border: 0;
   border-radius: 1.5rem;
   display: block;
   font-size: 24px;
-  //   margin: 10px 0 30px;
+  margin: 10px 0 10px;
   min-width: 300px;
-  padding: 17px 0;
+  padding: 15px 0;
   transition: all 0.2s ease-in;
   &:focus {
     outline: 0;
@@ -24,27 +24,8 @@ $background-color_2: #8d76ff;
     box-shadow: 0 3px 2px darkgray;
     background-color: $background-color_2;
   }
+}
 
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   border-radius: 1.5rem;
-  //   left: 0;
-  //   top: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   opacity: 0;
-  //   transition: all 0.5s;
-  //   box-shadow: 0 0 5px 20px rgb(156, 155, 155);
-  // }
-
-  // &:active:after {
-  //   box-shadow: 0 0 0 0 rgb(156, 155, 155);
-  //   position: absolute;
-  //   border-radius: 1.5rem;
-  //   left: 0;
-  //   top: 0;
-  //   opacity: 1;
-  //   transition: 0s;
-  // }
+.button {
+  @extend %button-temp;
 }

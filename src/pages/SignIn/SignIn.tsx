@@ -3,16 +3,13 @@ import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
 import registration_image from "../../assets/img/Take Away-pana.png";
 import logo from "../../assets/img/logo.png";
-import "./Login.scss";
+import "./SignIn.scss";
 import { FcGoogle } from "react-icons/fc";
-import SignIn from "../SignIn/SignIn";
-import { Link } from "react-router-dom";
 
-const Login = () => {
-  let test = <SignIn />
+const SignIn = () => {
   return (
-    <div className="main_box">
-      <div className='login_box'>
+    <div>
+      <div className='signin-box'>
         <div className='image-container'>
           <img
             className='img'
@@ -31,23 +28,11 @@ const Login = () => {
             height='200px'
             width='200px'
           />
+          <Input placeholder='First Name*' />
+          <Input placeholder='Last Name*' />
           <Input placeholder='Email*' />
-          <Input placeholder='Password*' type='password' />
-          <Button btnlabel='login' onClick={() => console.log("clicked")}>
-            Login
-          </Button>
-          {/* <a href='/'>
-            don't have an account yet?
-          </a> */}
-          <Link to='/signin'>don't have an account yet?</Link>
-          
-          <h5>━━━━━ or continue with ━━━━━</h5>
-          <Button
-            customButton='google'
-            btnlabel='google'
-            onClick={() => console.log("clicked")}
-          >
-            <FcGoogle /> Google
+          <Button btnlabel='signin' onClick={() => console.log("clicked")}>
+            Sign In
           </Button>
         </form>
       </div>
@@ -55,4 +40,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignIn;

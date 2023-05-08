@@ -1,0 +1,91 @@
+@import '../../components/Input/Input.scss';
+
+
+$color_1: #333;
+$color_2: inherit;
+$background-color_1: #e0e0e0;
+$background-color_2: #555;
+$background-color_3: #777;
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+.container {
+	margin: 1rem;
+	text-align: center;
+}
+
+.nav-lf {
+	background-color: $background-color_1;
+	color: $color_1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	padding: 0 1rem;
+	position: sticky;
+	top: 0;
+	align-items: center;
+	
+}
+
+.nav {
+	background-color: $background-color_1;
+	color: $color_1;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 2rem;
+	padding: 0 1rem;
+	position: sticky;
+	top: 0;
+	align-items: center;
+	
+	
+	
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	a {
+		color: $color_2;
+		text-decoration: none;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding: .25rem;
+	}
+	li.active {
+		background-color: $background-color_2;
+	}
+	li {
+		&:hover {
+			background-color: $background-color_3;
+		}
+	}
+	
+}
+.site-title {
+	font-size: 2rem;
+}
+
+.avatar {
+	// margin-top: .1rem;
+	border-radius: 2rem;
+}
+
+.search {
+	@extend %input-temp;
+	margin-top: 0.5rem;
+	padding: 10px;
+	border: solid 1.5px #8d76ff;
+  }

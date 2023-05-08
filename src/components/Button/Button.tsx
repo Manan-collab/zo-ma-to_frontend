@@ -4,10 +4,12 @@ import "./Button.scss";
 interface Props extends PropsWithChildren {
   btnlabel : string;
   onClick : () => void;
+  customButton?: string | 'button';
 }
 
-const Button = ({ btnlabel, onClick }: Props) => {
+const Button = ({ btnlabel, onClick, customButton='button',children}: Props) => {
 
-  return <button className='buttonOne' onClick={onClick}>{btnlabel}</button>;
+  return <button className={customButton} onClick={onClick}>{children}</button>;
 };
 export default Button;
+

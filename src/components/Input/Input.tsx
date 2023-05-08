@@ -1,29 +1,23 @@
+
 import React, { PropsWithChildren, useState } from 'react';
 import './Input.scss';
 
-interface Props extends PropsWithChildren {}
+interface Props extends PropsWithChildren {
+  placeholder: string;
+  type?: string;
+  customInput?: string | 'inputField';
+}
 
-const Input = ({ children }: Props) => {
+const Input = ({ placeholder, customInput='inputField', type= 'text' }: Props) => {
     const [name, setName] = useState("");
   return (
     <input
-        className='inputField'
-          type="text" 
-            placeholder='email address'
-        
+        className={customInput}
+          type={type} 
           onChange={(e) => setName(e.target.value)}
+          placeholder={placeholder}
         />
   )
 }
 
 export default Input;
-
-
-
-// const Button = () => {
-//   function Clicked() {
-//     alert("You clicked Login!");
-//   }
-
-//   return <button className='buttonOne' onClick={Clicked}>{children}</button>;
-// };
