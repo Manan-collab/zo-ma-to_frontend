@@ -2,15 +2,15 @@ import React, { PropsWithChildren } from 'react'
 import './Card.scss'
 import burger from '../../assets/img/card_img/7.png';
 
+interface Props extends PropsWithChildren {
+  imgSrc: string;
+  onClick: () => void;
+}
 
-
-const Card = () => {
+const Card = ({ imgSrc, onClick }: Props) => {
   return (
     <div>
-      <div className="card">
-        <img className='card-image' src={burger} />
-        {/* <h3>Card</h3> */}
-      </div>
+        <img className='card-image' src={imgSrc} onClick={onClick}/>
     </div>
   )
 }

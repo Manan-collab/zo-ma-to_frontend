@@ -1,8 +1,8 @@
 import React from "react";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
-import registration_image from "../../assets/img/Take Away-pana.png";
-import logo from "../../assets/img/logo.png";
+import registration_image from "../../assets/img/logo/Take Away-pana.png";
+import logo from "../../assets/img/logo/logo.png";
 import "./Login.scss";
 import { FcGoogle } from "react-icons/fc";
 import SignIn from "../SignIn/SignIn";

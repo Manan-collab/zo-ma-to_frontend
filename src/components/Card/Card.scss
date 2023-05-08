@@ -1,4 +1,4 @@
-.card {
+.card-image {
     margin: 20px;
   max-width: 260px;
   max-height: 300px;
@@ -6,14 +6,17 @@
   background-color: #e0e0e0;
   justify-content: center;
   align-items: center;
-//   text-align: center;
   border-radius: 25px;
   background: #e0e0e0;
   box-shadow: 8px 8px 15px #c3c3c3, -8px -8px 15px #fdfdfd;
   overflow: hidden;
 }
 
-.card-image {
-    max-width: 260px;
-    max-height: 300px;
+.card-image:hover{
+  cursor: pointer;
 }
+
+// .card-image {
+//     max-width: 260px;
+//     max-height: 300px;
+// }

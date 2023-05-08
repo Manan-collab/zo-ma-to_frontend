@@ -6,6 +6,7 @@
 
 .signin-box {
   display: flex;
+  margin: 10rem;
   min-width: 100vh;
   max-height: 90vh;
   min-height:auto;
@@ -27,7 +28,6 @@
       flex: 1;
       justify-content: center;
       align-items:  center;
-      // overflow: hidden;
   }
  
   .form {

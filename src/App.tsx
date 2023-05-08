@@ -14,6 +14,7 @@ import SignIn from "./pages/SignIn/SignIn";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Card from "./components/Card/Card";
 import { CardCarousel } from "./components/CardCarousel/CardCarousel";
+import { FcAbout, FcBusinessman, FcCamera, FcFullTrash } from "react-icons/fc";
 
 
 function App() {

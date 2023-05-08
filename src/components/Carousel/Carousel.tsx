@@ -13,28 +13,28 @@ import React from 'react';
 const IndividualIntervalsExample = () => {
   return (      
     <Carousel className='carosel'>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item className='carosel-item' interval={3000} >
         <img
           className="d-block w-100"
           src={img1}
           alt="First slide"
         />
       </Carousel.Item>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item className='carosel-item' interval={3000}>
         <img
           className="d-block w-100"
           src={img2}
           alt="Second slide"
         />
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className='carosel-item' interval={3000}>
         <img
           className="d-block w-100"
           src={img3}
           alt="Third slide"
         />
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className='carosel-item' interval={3000}>
         <img
           className="d-block w-100"
           src={img4}

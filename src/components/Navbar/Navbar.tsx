@@ -1,7 +1,7 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "./Navbar.scss";
-import logo from "../../assets/img/logo.png";
-import avatar from "../../assets/img/avatar.jpg";
+import logo from "../../assets/img/logo/logo.png";
+import avatar from "../../assets/img/avatar/avatar.jpg";
 import Input from "../Input/Input";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
