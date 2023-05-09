@@ -33,12 +33,10 @@ const Login = () => {
           />
           <Input placeholder='Email*' />
           <Input placeholder='Password*' type='password' />
-          <Button btnlabel='login' onClick={() => console.log("clicked")}>
+          <Link to='/dashboard'><Button btnlabel='login' onClick={() => console.log("clicked")}>
             Login
           </Button>
-          {/* <a href='/'>
-            don't have an account yet?
-          </a> */}
+          </Link>
           <Link to='/signin'>don't have an account yet?</Link>
           
           <h5>━━━━━ or continue with ━━━━━</h5>
