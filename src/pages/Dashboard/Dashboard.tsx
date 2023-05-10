@@ -8,6 +8,8 @@ import {
 } from "../../components/CardCarousel/CardCarousel";
 import Heading from "../../components/Heading/Heading";
 import CartIcon from "../../components/CartIcon/CartIcon";
+import Modal from "../../components/Modal/Modal";
+import Cart from "../Cart/Cart";
 
 const Dashboard = () => {
   return (
@@ -19,7 +21,8 @@ const Dashboard = () => {
         <CardCarousel />
         <Heading customHeading='Top Restaurants' />
         <CardCarouselRestaurants />
-        <CartIcon />
+        <Cart />
+        {/* <Modal /> */}
       </div>
     </div>
   );
