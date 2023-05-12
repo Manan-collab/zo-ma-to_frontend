@@ -10,8 +10,11 @@ import noodles from '../../assets/img/card_img/6.png'
 import burger from '../../assets/img/card_img/7.png'
 import startbucks2 from '../../assets/img/card_img/restaurants/starbucks.png';
 import startbucks from '../../assets/img/card_img/restaurants/eats.png';
+import mcdonalds from '../../assets/img/card_img/restaurants/mcdonalds.png';
+import dominos from '../../assets/img/card_img/restaurants/dominos.png';
+import chinatown from '../../assets/img/card_img/restaurants/chinatown.png';
 import Card from '../Card/Card';
-
+import { Link } from 'react-router-dom';
 
 
 export const responsive = {
@@ -21,7 +24,7 @@ export const responsive = {
 };
 
 export const foodItems = [
-    <Card imgSrc={cake} onClick={() => console.log("clicked")} />,
+    <Link to='/restaurants'><Card imgSrc={cake} onClick={() => console.log("clicked")} /></Link>,
     <Card imgSrc={roll} onClick={() => console.log("clicked")}/>,
     <Card imgSrc={pizza} onClick={() => console.log("clicked")}/>,
     <Card imgSrc={spaghetti} onClick={() => console.log("clicked")}/>,
@@ -31,16 +34,17 @@ export const foodItems = [
 ];
 
 export const restaurants = [
+    <Card imgSrc={chinatown} onClick={() => console.log("clicked")} />,
+    <Card imgSrc={mcdonalds} onClick={() => console.log("clicked")} />,
     <Card imgSrc={startbucks} onClick={() => console.log("clicked")} />,
     <Card imgSrc={startbucks2} onClick={() => console.log("clicked")} />,
-    <Card imgSrc={startbucks} onClick={() => console.log("clicked")} />,
+    <Card imgSrc={dominos} onClick={() => console.log("clicked")} />,
     <Card imgSrc={startbucks2} onClick={() => console.log("clicked")} />,
-    <Card imgSrc={startbucks} onClick={() => console.log("clicked")} />,
-    <Card imgSrc={startbucks2} onClick={() => console.log("clicked")} />,
-    <Card imgSrc={startbucks} onClick={() => console.log("clicked")} />,
+    <Card imgSrc={chinatown} onClick={() => console.log("clicked")} />,
 ];
 
 export const CardCarousel = () => (
+    
     <AliceCarousel
         mouseTracking
         items={foodItems}

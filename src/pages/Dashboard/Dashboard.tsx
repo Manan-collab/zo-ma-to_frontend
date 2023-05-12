@@ -8,8 +8,9 @@ import {
 } from "../../components/CardCarousel/CardCarousel";
 import Heading from "../../components/Heading/Heading";
 import CartIcon from "../../components/CartIcon/CartIcon";
-import Modal from "../../components/Modal/Modal";
 import Cart from "../Cart/Cart";
+import ListCard from "../../components/ListCard/ListCard";
+import { rest } from "../../assets/json/restaurants";
 
 const Dashboard = () => {
   return (
@@ -22,7 +23,6 @@ const Dashboard = () => {
         <Heading customHeading='Top Restaurants' />
         <CardCarouselRestaurants />
         <Cart />
-        {/* <Modal /> */}
       </div>
     </div>
   );

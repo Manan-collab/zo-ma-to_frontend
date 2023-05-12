@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
 import registration_image from "../../assets/img/logo/Take Away-pana.png";
@@ -6,12 +6,18 @@ import logo from "../../assets/img/logo/logo.png";
 import "./Login.scss";
 import { FcGoogle } from "react-icons/fc";
 import SignIn from "../SignIn/SignIn";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-  let test = <SignIn />
+  let test = <SignIn />;
+  const navigate = useNavigate();
+  const handleOnClick = useCallback(
+    () => navigate("/dashboard", { replace: true }),
+    [navigate]
+  );
+
   return (
-    <div className="main_box">
+    <div className='main_box'>
       <div className='login_box'>
         <div className='image-container'>
           <img
@@ -33,12 +39,12 @@ const Login = () => {
           />
           <Input placeholder='Email*' />
           <Input placeholder='Password*' type='password' />
-          <Link to='/dashboard'><Button btnlabel='login' onClick={() => console.log("clicked")}>
+          <Button btnlabel='login' onClick={handleOnClick}>
             Login
           </Button>
-          </Link>
+
           <Link to='/signin'>don't have an account yet?</Link>
-          
+
           <h5>━━━━━ or continue with ━━━━━</h5>
           <Button
             customButton='google'

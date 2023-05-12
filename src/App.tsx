@@ -15,6 +15,9 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Card from "./components/Card/Card";
 import { CardCarousel } from "./components/CardCarousel/CardCarousel";
 import Cart from "./pages/Cart/Cart";
+import ListCard from "./components/ListCard/ListCard";
+import Restaurants from "./pages/Restaurants/Restaurants";
+import Menu from "./pages/Menu/Menu";
 
 
 function App() {
@@ -31,6 +34,8 @@ function App() {
           <Route path='/pricing' element={<Pricing />} />
           <Route path='/about' element={<About />} />
           <Route path='/home' element={<Home />} />
+          <Route path='/restaurants' element={<Restaurants />} />
+          <Route path='/menu' element={<Menu />} />
         </Routes>
       </div> 
     </div>

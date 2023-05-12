@@ -10,7 +10,9 @@ interface Props extends PropsWithChildren {
 const Card = ({ imgSrc, onClick }: Props) => {
   return (
     <div>
+      <div className='mainCardContainer'>
         <img className='card-image' src={imgSrc} onClick={onClick}/>
+    </div>
     </div>
   )
 }
