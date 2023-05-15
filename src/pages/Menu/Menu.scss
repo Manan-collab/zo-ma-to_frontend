@@ -1,0 +1,42 @@
+.RestaurantDataContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageDetail {
+  // margin-right: 500px;
+  // background-color: antiquewhite;
+  width: 1000px;
+  border-radius: 1.5rem;
+  border-radius: 38px;
+  background: #e0e0e0;
+  box-shadow: 14px 14px 25px #a4a4a4, -14px -14px 25px #ffffff;
+}
+
+.InternalImageDetail {
+  display: flex;
+  margin-right: 500px;
+}
+
+.RestaurantDataContainer {
+  // background-color: red;
+  height: 350px;
+}
+
+.RestaurantMenuImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  // background-color: aqua;
+  height: 250px;
+  max-width: 250px;
+  border-radius: 10rem;
+}
+
+.RestaurantDetailsComponentRating {
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+}

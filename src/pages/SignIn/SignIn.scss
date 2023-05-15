@@ -1,4 +1,4 @@
-@import '../../components/Button/Button.scss';
+@import "../../components/Button/Button.scss";
 * {
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
   margin: 10rem;
   min-width: 100vh;
   max-height: 90vh;
-  min-height:auto;
+  min-height: auto;
   gap: 6px;
   padding: 50px;
   border-radius: 20px;
@@ -19,17 +19,17 @@
   box-shadow: 13px 13px 25px #949494, -13px -13px 25px #ffffff;
 
   .vertical {
-      margin: 50px 20px;
-      border-left: 3px solid #d3d3d3;
-      height: 500px;
+    margin: 50px 20px;
+    border-left: 3px solid #d3d3d3;
+    height: 500px;
   }
-  
+
   .image-container {
-      flex: 1;
-      justify-content: center;
-      align-items:  center;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
   }
- 
+
   .form {
     justify-content: center;
     align-items: center;

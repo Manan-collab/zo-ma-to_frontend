@@ -36,6 +36,8 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/restaurants' element={<Restaurants />} />
           <Route path='/menu' element={<Menu />} />
+          <Route path=":id" errorElement={<p>Oops! Something Went Wrong</p>}
+/>
         </Routes>
       </div> 
     </div>

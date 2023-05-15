@@ -34,7 +34,7 @@ export const foodItems = [
 ];
 
 export const restaurants = [
-    <Card imgSrc={chinatown} onClick={() => console.log("clicked")} />,
+    <Link to='/menu'><Card imgSrc={chinatown} onClick={() => console.log("clicked")} /></Link>,
     <Card imgSrc={mcdonalds} onClick={() => console.log("clicked")} />,
     <Card imgSrc={startbucks} onClick={() => console.log("clicked")} />,
     <Card imgSrc={startbucks2} onClick={() => console.log("clicked")} />,

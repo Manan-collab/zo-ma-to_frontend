@@ -18,7 +18,43 @@
   cursor: pointer;
 }
 
+.mainCardContainer {
+  transition: transform .2s; /* Animation */
+}
+.mainCardContainer:hover {
+  transform: scale(1.05);
+}
 // .card-image {
 //     max-width: 260px;
 //     max-height: 300px;
+// }
+
+
+
+// .card-image {
+// 	margin: 20px;
+// 	width: 260px;
+// 	height: 260px;
+// 	// background-color: #e0e0e0;
+// 	justify-content: center;
+// 	align-items: center;
+// 	border-radius: 25px;
+// 	background: linear-gradient(145deg, #e6e6e6, #ffffff);
+// 	box-shadow: 9px 9px 18px #d1d1d1, -9px -9px 18px #ffffff;
+// 	overflow: hidden;
+// 	&:hover {
+// 		cursor: pointer;
+// 	}
+// }
+// .mainCardContainer {
+// 	transition: transform .2s;
+// 	&:hover {
+// 		transform: scale(1.05);
+// 	}
+// }
+// // {
+// 	.card-image {
+// 		// max-width: 260px;
+// 		// max-height: 300px;
+// 	}
 // }

@@ -1,48 +1,45 @@
+$background-color_1: #e0e0e0;
+$background-color_2: greenyellow;
+
 .RestaurantCardContainer {
-    background-color: #e0e0e0;
-    margin: 20px;
-    height: 150px;
-    width: 700px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 1rem;
-    border-radius: 30px;
-background: linear-gradient(145deg, #e6e6e6, #ffffff);
-box-shadow:  9px 9px 18px #d1d1d1,
-             -9px -9px 18px #ffffff;
+	background-color: $background-color_1;
+	margin: 20px;
+	height: 150px;
+	width: 700px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	border-radius: 1rem;
+	border-radius: 30px;
+	background: linear-gradient(145deg, #e6e6e6, #ffffff);
+	box-shadow: 9px 9px 18px #d1d1d1, -9px -9px 18px #ffffff;
 }
-
 .RestaurantImageContainer {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // margin-right: 10px;
-    // padding-top: 20px;
-    border-radius: 0.5rem;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// margin-right: 10px;
+	// padding-top: 20px;
+	border-radius: 0.5rem;
 }
-
 .RestaurantDetailsContainer {
-    flex: 3;
-    margin-left: 10px;
-    padding-top: 10px;
-    position: relative;
+	flex: 3;
+	margin-left: 10px;
+	padding-top: 10px;
+	position: relative;
 }
-
-
 .RestaurantRatingContainer {
-    border-radius: 1rem;
-    position: absolute;
-    display: flex;
-
-    right:0;
-    top: 0;
-    background-color: greenyellow;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 4px;
-    height: 30px;
-    width: 40px;
+	border-radius: 1rem;
+	position: absolute;
+	display: flex;
+	right: 0;
+	top: 0;
+	background-color: $background-color_2;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	padding: 4px;
+	height: 30px;
+	width: 40px;
 }
