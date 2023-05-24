@@ -36,6 +36,7 @@ $background-color_3: #777;
     top: 0;
     align-items: center;
   }
+  
 
   ul {
     padding: 0;
@@ -45,6 +46,8 @@ $background-color_3: #777;
     gap: 1rem;
     justify-content: center;
     align-items: center;
+
+   
   }
   a {
     color: $color_2;
@@ -77,4 +80,24 @@ $background-color_3: #777;
   margin-top: 0.5rem;
   padding: 10px;
   border: solid 1.5px #8d76ff;
+}
+
+.location-modal {
+  border: 2px solid #ffffff;
+  border-radius: 0.75rem;
+  min-height: 500px;
+  width: 400px;
+  background-color: #f0f0f0;
+  padding: 20px;
+
+  .location-modal-body-item {
+    display: flex;
+    justify-content: left;
+    padding: 1rem;
+
+    .location-modal-body-item-icon {
+      color: #424242;
+      padding-right: 10px;
+    }
+  }
 }

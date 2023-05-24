@@ -19,13 +19,9 @@ import ListCard from "./components/ListCard/ListCard";
 import Restaurants from "./pages/Restaurants/Restaurants";
 import Menu from "./pages/Menu/Menu";
 
-
 function App() {
   return (
     <div>
-      {/* <Card /> */}
-      {/* <Dashboard /> */}
-
       <div className='route'>
         <Routes>
           <Route path='/' element={<Login />} />
@@ -36,10 +32,9 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/restaurants' element={<Restaurants />} />
           <Route path='/menu' element={<Menu />} />
-          <Route path=":id" errorElement={<p>Oops! Something Went Wrong</p>}
-/>
+          <Route path=':id' errorElement={<p>Oops! Something Went Wrong</p>} />
         </Routes>
-      </div> 
+      </div>
     </div>
   );
 }

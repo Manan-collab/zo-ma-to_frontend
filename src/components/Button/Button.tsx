@@ -8,7 +8,7 @@ interface Props extends PropsWithChildren {
 }
 
 const Button = ({ btnlabel, onClick, customButton='button',children}: Props) => {
-
+  
   return <button className={customButton} onClick={onClick}>{children}</button>;
 };
 export default Button;

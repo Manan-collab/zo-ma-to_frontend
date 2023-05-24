@@ -6,8 +6,14 @@ import Input from "../Input/Input";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import Popup from "reactjs-popup";
+import { address } from "../../assets/json/userAddress";
+import MenuCard from "../MenuCard/MenuCard";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [location, setlocation] =useState<string>('');
+
   const icon: IconProp = faMapMarkerAlt;
 
   <FontAwesomeIcon icon={icon} style={{ color: "#ffffff" }} />;
@@ -25,10 +31,56 @@ export default function Navbar() {
         <Input customInput='search' placeholder='Search...' />
       </div>
       <ul>
-        <h4>
-          {" "}
-          <FontAwesomeIcon icon={faMapMarkerAlt} /> Location
-        </h4>
+        <Popup
+          trigger={
+            <h3
+              style={{ cursor: "pointer", fontSize: '20px'}}
+              onClick={() => console.log("cicked location")}
+            >
+              <FontAwesomeIcon icon={faMapMarkerAlt} />
+            {' '} {location || "Location"}
+            </h3>
+          }
+          modal
+        >
+          <div className='location-modal'>
+            <div className='location-modal-header'>
+              <h4>Select your delivery location...</h4>
+            </div>
+            <div className='location-modal-body'>
+              {address.map((address) => {
+                return (
+                  <div className='location-modal-body-item' onClick={()=>setlocation(address.address)}>
+                    <div className='location-modal-body-item-icon'>
+                      <FontAwesomeIcon
+                        icon={faMapMarkerAlt}
+                        style={{ fontSize: "25px", color: "#8d76ff" }}
+                      />
+                    </div>
+                    <div className='location-modal-body-item-content' style={{cursor: 'pointer'}} onClick={()=> console.log(address)}>
+                      <div
+                        className='location-modal-body-item-text'
+                        style={{ fontSize: "12px" }}
+                      >
+                        {address.alias}
+                      </div>
+                      <div className='location-modal-body-item-text'>
+                        {address.address}
+                      </div>
+                      <div
+                        className='location-modal-body-item-break'
+                        style={{ fontSize: "10px", color: "#acacac" }}
+                      >
+                        ────────────────────────
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </Popup>
+
         <CustomLink to='/pricing'>Pricing</CustomLink>
         <CustomLink to='/about'>About</CustomLink>
         <CustomLink to='/home'>

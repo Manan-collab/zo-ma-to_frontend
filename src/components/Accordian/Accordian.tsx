@@ -3,6 +3,7 @@ import './Accordian.scss';
 import { rest } from '../../assets/json/restaurants';
 import ListCard from '../ListCard/ListCard';
 import { MdExpandLess, MdExpandMore } from 'react-icons/md'
+import MenuCard from '../MenuCard/MenuCard';
 
 const Accordion = ({ title, content }: any) => {
   const [isActive, setIsActive] = useState(true);
@@ -16,7 +17,7 @@ const Accordion = ({ title, content }: any) => {
       {isActive && <div className="accordion-content">
       <div className="acccards">
         { rest.map((rest) =>{
-            return <ListCard  rest={rest}/>
+            return <MenuCard  rest={rest}/>
           })}
         </div>
         </div>}

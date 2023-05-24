@@ -18,9 +18,11 @@ import { Link } from 'react-router-dom';
 
 
 export const responsive = {
-    0: { items: 4 },
-    568: { items: 5 },
-    1024: { items: 6 },
+    0: { items: 1 },
+    580: { items: 2 },
+    720:{ items: 3 },
+    1024: { items: 4 },
+    1600:{ items: 6 }
 };
 
 export const foodItems = [
